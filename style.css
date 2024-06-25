@@ -8,19 +8,16 @@
 
 :root {
     --white: #ffffff;
-    --gray: #cccccc;
-    --gray2: #393939;
-    --purple: #ecd1fe;
-    --purple0: #872FBE;
-    --purple1: #9813E8;
-    --purple2: #723D93;
-    --purple3: #583D69;
-    --pink: #e813e1;
+    --gray: #B5A8BE;
+    --purple: #CFA7E8;
+    --purple0: #D38DFF;
+    --purple1: #C363FF;
+    --purple2: #583D69;
     --dark: #382E3E;
 }
 
 body {
-    background-color: #583D69;
+    background-color: #B5A8BE;
     height: 100vh;
     font-family: 'Lato';
 }
@@ -56,7 +53,7 @@ nav {
 
 nav > a {
     font: bold .8em 'Lato', sans-serif;
-    color: #d9a7fd;
+    color: #B5A8BE;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -122,12 +119,12 @@ section {
 
 h1 {
     font-size: 4rem;
-    color: #ffffff;
+    color: #723D93;
     letter-spacing: 2px;
 }
 
 strong {
-    color: #e813e1;
+    color: #C363FF;
 }
 
 .link-action {
@@ -145,13 +142,14 @@ strong {
     width: 100%;
 }
 
-.second-section {
+:is(.second-section, .fourth-section) {
     background-color: #723D93;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    color: white;
 }
 
 .second-section ul {
@@ -175,24 +173,45 @@ strong {
     cursor: default;
 }
 
-.title {
-    color: #ffffff;
+.third-section-title {
+    color: #723D93;
 }
 
 .third-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .third-section > div {
     display: flex;
     gap: 4rem;  
     justify-content: center;
-    align-items: center; 
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .third-section > div img {
-    max-width: 300px;
+    max-width: 250px;
+    border-radius: 20px;
+}
+
+.third-section > div p {
+    max-width: 600px;
+    text-align: justify;
+}
+
+footer {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
